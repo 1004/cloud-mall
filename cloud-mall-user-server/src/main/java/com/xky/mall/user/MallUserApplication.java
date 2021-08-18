@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @version 1.0
  * @date 2021/8/12 11:19 上午
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.xky.mall.*")
 @EnableSwagger2
 @EnableRedisHttpSession
 @MapperScan(basePackages = "com.xky.mall.user.model.dao")

@@ -21,16 +21,6 @@ public class Constants {
      */
     public static final String USER_LOGIN_CACHE_KEY = "user_login_cache_key";
 
-    /**
-     * 图片缓存的后端目录，放到配置文件
-     */
-    public static String FILE_UPLOAD_DIR;
-
-    @Value("${file.upload.dir}")
-    public void setUploadFileDir(String uploadFileDir) {
-        FILE_UPLOAD_DIR = uploadFileDir;
-    }
-
     public interface ProductListOrderBy {
         Set<String> PRICE_ASC_DESC = Sets.newHashSet("price desc", "price asc");
     }
