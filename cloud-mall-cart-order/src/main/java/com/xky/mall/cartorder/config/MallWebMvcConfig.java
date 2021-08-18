@@ -14,6 +14,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class MallWebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        /**
+         * 路径匹配的意思， 请求地址-->映射到本地静态资源
+         */
         registry.addResourceHandler("/image/**").addResourceLocations("file:"+ OrderUploadFileConstants.FILE_UPLOAD_DIR);
         registry.addResourceHandler("swagger-ui.html").addResourceLocations(
                 "classpath:/META-INF/resources/");
